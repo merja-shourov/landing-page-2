@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Crimson+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+   
+}
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    width: 100%;
+    background-color: #073621;
+    border-top: 3px solid #5d8f30;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.container{
+    width: 94%;
+    margin: auto;
+}
+.logo-area{
+    width: 20%;
+    float: left;
+}
+.logo-area img{
+    width: 55%;
+    margin-top: 10px;
+}
+.menu-area ul{
+    /*! text-align: right; */
+    list-style: none;
+    float: right;
+    margin: 0px 0 0 0;
+}
+.menu-area >ul> li{
+    float: left;
+    position: relative;
+}
+.menu-area ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    display: block;
+}
+.menu-area ul li:hover >a{
+    transition: 0.5s;
+    color: orange;
+}
+/* Sub menu*/
+.menu-area ul li ul{
+    margin-left: 0px;
+    padding-left: 0px;
+    background-color: #073621;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.menu-area ul ul li a{
+    padding: 15px 30px 15px 20px;
+    display: block;
+    font-size: 14px;
+}
+.menu-area ul ul li:hover a{
+    color: orange;
+    background-color: #123024;
+    transition: 0.5s;
+}
+.menu-area ul li:hover ul{
+    display: block;
+}
+.menu-area{
+    width: 70%;
+    float: left;
+}
+.bye-area{
+    width: 10%;
+    float: left;
+}
+.bye-area a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5d8f30;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    margin: 13px 0 0 20px;
+}
+/*slider area*/
+
+.slider-area{
+    width: 100%; 
+    height: 115%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('image/groc-slider-slide1.jpg'); 
+    background-size: cover;
+    z-index: -9999;   
+}
+.slider-area .slider-content{
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translateY(-50%);
+}
+.slider-content{
+    width: 40%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+.slider-content img{
+    max-width: 160px;
+}
+.slider-content h1{
+    color:#fff;
+    font-size: 95px;
+    margin-top: 10px;
+    font-family: 'Crimson Pro', serif;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+.slider-area .slider-menu{
+    position: absolute;
+    left: 10%;
+    bottom: 150px;
+}
+.slider-area .slider-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+.slider-menu ul li{
+    float: left;
+}
+.slider-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    display: block;
+    padding: 7px 25px; 
+    cursor: pointer; 
+}
+
+.main-content{
+    width: 100%;  
+}
+.background{
+    padding: 0;
+    margin-bottom: -20px;
+    background-color: #073621;
+    width: 100%;
+    height: 640px;
+}
+.slider-bottom-background{
+    width: 100%;
+    margin-bottom: -5px;
+}
+.slider-bottom-background img{
+    width: 100%;
+    margin-top: 25px;
+}
+.content-detail{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    background-image: url('image/groc-section-blob.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 150px 100px 10px 110px;
+    box-sizing: border-box;
+}
+.detail-box{
+    text-align: center;
+    color: #fff;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.bottom-background{
+    width: 100%;
+}
+
+.bottom-background img{
+    width: 100%;
+    z-index: 20000;
+}
+.product-section{
+    width: 100%;
+  
+}
+.product-section h1{
+    font-size: 36px;
+    font-family: 'Roboto Mono', monospace;
+    color: #123024;
+}
+.product-section hr{
+    width: 70px;
+    border-top: none;
+    border-bottom: 5px solid orange;
+}
+.product-section{
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.latest-product{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+   
+    overflow: hidden;
+    padding: 5px 0 30px 0;
+    
+}
+
+.prduct-box img{
+    width: 100%; 
+    height:;
+}
+.prduct-box h2{
+    color: #5d8f30;
+}
+.prduct-box span{
+    color: orange;
+    font-weight: bold;
+}
+.prduct-box img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+del{
+    font-weight: 100; opacity: 0.5;
+    margin-right: 5px;
+}
+.button{
+    display: block;
+    margin: 60px;
+}
+.button a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 70px;
+    border-radius: 5px;
+    background: #f7c911;
+    color: #107c3b;
+    font-weight: 700;
+}
+.offer-area{
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    margin-top: 50px;
+}
+.offer-area .box img{
+    width: 100px;
+
+}
+.offer-area .box h2{
+    color: #107c3b;
+    font-size: 22px;
+}
+.delevery{
+    width: 100%;
+    
+
+}
+.delevery .mid{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    background-image: url(image/grocery-home-lines-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+.left-delevery{
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+.left-delevery img{
+    width: 100%;
+}
+.right-devevery{
+    padding: 0 50px;
+}
+
+.right-devevery h1{
+    font-size: 36px;
+    color: #107c3b;
+    font-weight: 900px;
+    line-height: 47px;
+    font-family: 'Piazzolla', serif;
+    margin-bottom: 15px;
+}
+.right-devevery hr{
+    width: 100px;
+    border-top: none;
+    border-bottom: 4px solid orange;
+    margin-left: 0px;
+}
+.right-devevery p{
+    opacity: 0.6;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.three-item{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    color: green;
+}
+.contract{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    background: #f6f1ec;
+    padding-top: 55px;
+    padding-bottom:  55px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.contract-man{
+    width: 50%;
+    float: left;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+.contract-man img{
+    width: 150px;
+}
+.contract-num{
+    width: 50%;
+    float:left;
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.contract-num h1{
+    font-size: 48px;
+    margin-bottom: 15px;
+    
+}
+.contract-num p{
+    font-size: 18px;
+    color: green;
+}
+.family{
+    overflow: hidden;
+    width: 100%;
+}
+.family-left{
+    width: 50%;
+    float: left;
+    padding: 120px;
+    box-sizing: border-box;
+    background-image: url(image/groc-home-brown-bg.png);
+}
+.family-left h1{
+    font-size: 37px;
+    color: #fff;
+}
+.family-left hr{
+    width: 100px;
+    border-top: none;
+    border-bottom: 3px solid #fff;
+    margin-left: 0;
+}
+.family-left p{
+    line-height: 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    color: #fff;
+}
+.family-left a{
+    text-decoration: none;
+     display: inline-block;
+    font-size: 20px;
+    color: #7c6c60;
+    padding: 13px 30px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+.family-right{
+    width: 50%;
+    float: left;
+}
+.family-right img{
+    width: 100%;
+    overflow: hidden;
+}
+
+footer{
+    background-color: #073621;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0;
+    margin-top: -5px;
+    border-bottom: 4px solid #5d8f30;
+}
+footer p{
+    color: #839b90;
+    font-size: 17px;
+}
+footer a{
+    text-decoration: none;
+    color: #f7c911;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+footer a:hover{
+    color: #fff;
+}
